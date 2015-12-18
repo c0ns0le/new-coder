@@ -19,11 +19,10 @@ MY_FILE = "../data/sample_sfpd_incident_all.csv"
 
 
 def parse(raw_file, delimiter):
-    """Parses a raw CSV file to a JSON-like object"""
-
+    """Parse a raw CSV file to a JSON-like object."""
     # Open CSV file, and safely close it when we're done
     opened_file = open(raw_file)
-    
+
     # Read the CSV data
     csv_data = csv.reader(opened_file, delimiter=delimiter)
 
@@ -48,7 +47,7 @@ def main():
     new_data = parse(MY_FILE, ",")
 
     # Let's see what the data looks like!
-    print new_data
+    print(new_data)
 
 
 if __name__ == "__main__":
