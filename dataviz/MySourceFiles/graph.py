@@ -56,7 +56,7 @@ def visualize_days():
 
 def visualize_type():
     """Visualize data by category in a bar graph"""
-    data_file = parse(MY_FILE, ",")
+    data_file = parse.parse(MY_FILE, ",")
     # Same as before, this returns a dict where it sums the total
     # incidents per Category.
     counter = Counter(item["Category"] for item in data_file)
@@ -93,7 +93,7 @@ def visualize_type():
 
 def main():
     visualize_days()
-    #visualize_type()
+    visualize_type()
 
 
 if __name__ == "__main__":
