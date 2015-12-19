@@ -1,5 +1,5 @@
 """
-Data Visualization Project
+Data Visualization Project.
 
 Parse data from an ugly CSV or Excel file, and render it in
 JSON, save to a database, and visualize in graph form.
